@@ -3,7 +3,7 @@ FROM python:3.12
 WORKDIR /st_app
 
 
-RUN apt-get update && apt-get clean && apt-get install -y build-essential     curl     software-properties-common     git     && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get clean && apt-get install -y build-essential     
 
 COPY . .
 
